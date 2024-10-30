@@ -1,101 +1,120 @@
+"use client";
 import Image from "next/image";
+import Footer from "./component/footer";
+import { motion } from 'framer-motion';
+
+function AnimatedSection({children}) {
+  return (
+    <motion.div
+      initial={
+        { opacity: 0, y: 50 }
+      }
+      whileInView={
+        { opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }} >
+      {children}
+    </motion.div>
+  );
+}
+
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="bodyCont">
+      <AnimatedSection>
+   <div className="heading">
+          <h3>Pro.Beyond.</h3>
+          <h1>IPhone 14 <b>Pro</b></h1>
+          <h3>Created to change everything for the better, for everyone</h3>
+          <button>Shop Now</button>
+         </div>   </AnimatedSection><AnimatedSection>
+         <div className="img3">
+        <img src="/image/iphoneimage.png"></img></div></AnimatedSection>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+ 
+        
+        <div className="body2">   
+        <img src="/image/PlayStation.png"></img>
+      <div className="playStation">   <h1><b>Playstation 5</b></h1>
+   <p>Incredibly powerful CPUs,GPUs and an SSD with<br></br> 
+   integrated I/O will redefine your PlayStation<br></br> experience.</p></div> <div className="airpod"> <img src="/image/AirpodsMax.png"></img><div className="airpodHeading"><h3>Apple</h3><h3>Airpods</h3><h1><b>MAX</b></h1>
+   <p>Computational audio.<br></br>
+    Listen, it's powerful.</p></div></div> 
+   
+
+       <div className="appleVision">
+        <img src="/image/VisionPro.png"></img>
+        <div className="appleVisionHeading"><h1>Apple </h1><h1>Vision <b>Pro</b></h1>
+  <p>An immersive way to <br></br>experience <br></br>entertainment.</p></div></div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+
+        <div className="macbookDiv"> <div className="macHeading"> <h4>Mackbook</h4>
+        <h1><b>Air</b></h1>
+        <p>The new 15-inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.</p><button>Shop now</button>
+        </div>
+        <img src="/image/MacBookAir.png"></img>
+       </div>
+
+
+       <div className="browseCont">
+        <pre><h3><b>Browse by Category                                                                                                                   </b></h3></pre>
+        <div className="browseImg1"><img src="/image/Arrow.png"></img></div><div className="browseImg2"><img src="/image/ArrowRight.png"></img></div><br></br>
+
+<div className="browseProduct"> 
+        <div className="product"><img src="https://www.freepnglogos.com/uploads/mobile-phone-logo-icon-32.png"></img><h4>Phones</h4></div>
+       
+        <div className="product3"><img src="https://static-00.iconduck.com/assets.00/camera-icon-512x417-vgmhgbfy.png" ></img><h4>Cameras</h4></div>
+        <div className="product4"><img src="https://cdn-icons-png.flaticon.com/512/502/502690.png"></img><h4>Headphones</h4></div>
+        <div className="product5"><img src="https://www.iconpacks.net/icons/1/free-computer-icon-956-thumb.png"></img><h4>Computers</h4></div>
+        <div className="product6"><img src="https://www.freeiconspng.com/thumbs/game-icon-png/games-icons-free-icons-in-token-dark-2.png"></img><h4>Gaming</h4></div>
+        </div>
+       </div>
+
+       <div className="list"><div className="listHeading"><h3><u>New Arrival</u></h3>   <h3>Best Seller</h3> <h3>Feature Products</h3>   </div>
+        
+        <div className="listProduct">
+        <div className="listPro"><img src="/image/Like.png"></img>
+        <img src="/image/Iphone14pro.png" ></img><h4>Apple Iphone14 Pro Max<br></br> 128GB Deep Purple</h4><h1><b>900$</b></h1><button>Buy Now</button></div>
+        <div className="listPro"><img src="/image/Like.png"></img><img src="/image/BlackMagicCamera.png"></img><h4>Blackmagic Pocket Cinema<br></br> Camera 6k</h4><h1><b>2535$</b></h1><button>Buy Now</button></div>
+        <div className="listPro"><img src="/image/Like.png"></img><img src="/image/applewatch9.png"></img><h4>Apple Watch Series 9 GPS<br></br> 41mm Straight Aluminium</h4><h1><b>399$</b></h1><button>Buy Now</button></div>
+        <div className="listPro"><img src="/image/Like.png"></img><img src="/image/airpodsmaxm.png"></img><h4>AirPods Max Silver<br></br> Straight Aluminium</h4><h1><b>549$</b></h1><button>Buy Now</button></div></div>
+
+        <div className="listProduct2">
+        <div className="listPro"><img src="/image/Like.png"></img><img src="/image/GalaxyWatch.png"></img><h4>Samsung Galaxy Watch6<br></br> Classic 47mm Black</h4><h1><b>369$</b></h1><button>Buy Now</button></div>
+        <div className="listPro"><img src="/image/Like.png"></img><img src="/image/ZFold.png"></img><h4>Galaxy Zfold5 Unlocked |<br></br>256GB | Phantom Black</h4><h1><b>1799$</b></h1><button>Buy Now</button></div>
+        <div className="listPro"><img src="/image/Like.png"></img><img src="/image/GalaxyBuds.png"></img><h4>Galaxy Buds FE<br></br>Graphite</h4><h1><b>99.99$</b></h1><button>Buy Now</button></div>
+        <div className="listPro"><img src="/image/Like.png"></img><img src="/image/AppleIPad.png"></img><h4>Apple iPad 9 10.2 g4GB Wi-Fi<br></br>Silver MK2L3 2021</h4><h1><b>900$</b></h1><button>Buy Now</button></div></div>
+       </div>
+   
+
+
+
+   <div className="popularPro">
+    <div className="popularPro1"><img src="/image/PopularProducts.png"></img><h1>Popular Products</h1><p>iPad combines a magnificient 10.2-inch<br></br> Retina display, incredible performance,<br></br> multitasking and ease of use.</p><button>Shop Now</button></div>
+    <div className="popularPro2"><img src="/image/ipadpro.png"></img><h1>Ipad Pro</h1><p>iPad combines a magnificient 10.2-inch<br></br> Retina display, incredible performance,<br></br> multitasking and ease of use.</p><button>Shop Now</button></div>
+    <div className="popularPro3"><img src="/image/samsunggalaxy.png"></img><h1>Samsung Galaxy</h1><p>iPad combines a magnificient 10.2-inch<br></br> Retina display, incredible performance,<br></br> multitasking and ease of use.</p><button>Shop Now</button></div>
+    <div className="popularPro4"><img src="/image/macbookpro.png"></img><h1>Macbook Pro</h1><p>iPad combines a magnificient 10.2-inch<br></br> Retina display, incredible performance,<br></br> multitasking and ease of use.</p><button>Shop Now</button></div>
+   </div>
+
+
+   <div className="discount">
+     <h2><b>Discounts up to-50%</b></h2>
+    <div className="discountProduct">
+    <div className="discountDiv"><img src="/image/Like.png"></img><img src="/image/goldeniphone.png"></img><h4>Apple iPhone 14 Pro 512GB<br></br>Gold (MQ233)</h4><h1><b>1437$</b></h1><button>Buy Now</button></div>
+    <div className="discountDiv"><img src="/image/Like.png"></img><img src="/image/airpodsmaxm.png"></img><h4>AirPods Max Silver<br></br> Straight Aluminium</h4><h1><b>549$</b></h1><button>Buy Now</button></div>
+    <div className="discountDiv"><img src="/image/Like.png"></img><img src="/image/applewatch9.png"></img><h4>Apple Watch Series 9 GPS<br></br> 41mm Straight Aluminium</h4><h1><b>399$</b></h1><button>Buy Now</button></div>
+    <div className="discountDiv"><img src="/image/Like.png"></img><img src="/image/spacegrayiphone.png"></img><h4>Apple iPhone 14 Pro 1TB Gold (MQ2V3) </h4><h1><b>1499$</b></h1><button>Buy Now</button></div></div>
+   </div>
+
+
+
+   <div className="summerSale"><span className="image-text"><h1>Big Summer <b>Sale</b></h1><p>Commodo fames vitae vitae leomauris in. Eu consequet.</p><button>Shop Now</button></span><img src="/image/Banner2.png"></img>
+  </div>
+  <Footer/>
     </div>
-  );
-}
+
+
+  ); 
+ }

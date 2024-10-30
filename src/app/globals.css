@@ -3,25 +3,674 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #f01717;
   --foreground: #171717;
 }
+/* html, body{
+ 
+  padding: 0;
+} */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.headerCont{
+  height: 90px;
+  width: 100%;
+  background-color: #ffffff;
+  color: rgb(3, 3, 3);
+  align-items: center;
+  display: flex;
+ gap: 1.5cm;
+ font-size: x-large;
+ font-family: sans-serif;
+
+}
+.cyber{
+  margin-left: 200px;
+}
+input{
+  background-color: rgb(245, 243, 243);
+  border-radius: 6px;
+  height: 50px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+.img2{
+width: 30px;
+display: flex;
+gap: 1cm;
+margin-left: 40px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.bodyCont{
+  margin: 0;
+  padding: 0;
+  background-color: #171717;
+  height: 800px;
+  width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ /* gap: 0; */
+}
+.img3 img{
+ padding: 0;
+  margin-left: 300px;
+/* 
+ overflow: hidden;
+  margin-left: 30px;
+  margin-top: 150px; */
+
+}
+
+.heading{
+  height: 400px;
+  width: 500px;
+  margin-top: 200px;
+  margin-left: 200px;
+  
+}
+.heading h1{
+  color: white;
+  font-size: 70px;
+}
+.heading h3{
+  color: grey;
+  font-size: larger;
+}
+button{
+  border-radius: 4px;
+  color: rgb(226, 224, 224);
+  border-color: #ffffff;
+  border: solid white 1.5px;
+  margin-top: 30px;
+  height: 50px;
+  width: 200px;
+}
+
+.body2{
+  background-color: rgb(255, 255, 255);
+  height: 350px;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* overflow: hidden; */
+  flex-wrap: wrap;
+  align-items: center;
+}
+.body2 img{
+  height: 350px;
+}
+.playStation h1{
+   margin-top: 5px;
+  margin-left: 50px;
+  font-size: 50px;
+  
+}
+.playStation p{
+  margin-left: 50px;
+  height: 30px;
+  color: grey;
+}
+.macbookDiv{
+  height: 700px;
+  width: 50%;
+  background-color: rgb(226, 225, 225);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.macHeading h4{
+  font-size: 50px;
+  margin-left: 90px;
+}
+.macHeading p{
+  margin-left: 90px;
+  width: 300px;
+  color: grey;
+}
+.macHeading h1{
+  font-size: 50px;
+  margin-left: 90px;
+}
+.macbookDiv img{
+  margin-left: 170px;
+}
+
+
+
+  
+
+.macHeading button{
+  height: 50px;
+  width: 200px;
+  color: rgb(0, 0, 0);
+  border-color: #000000;
+  border: solid rgb(0, 0, 0) 1.5px;
+  border-radius: 4px;
+  margin-left: 90px;
+}
+
+
+
+.airpod{
+  height: 350px;
+  width: 50%;
+  background-color: rgb(226, 225, 225);
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+}
+.airpod img{
+  height: 300px;
+  width: 100px;
+}
+.airpodHeading{
+  margin-left: 90px;
+}
+.airpodHeading h1{
+  font-size: 40px;
+}
+.airpodHeading h3{
+  font-size: 40px;
+}
+.airpodHeading p{
+  color:grey;
+}
+
+
+
+.appleVision{
+  height: 350px;
+  width: 50%;
+  display: flex;
+  background-color: #474747;
+}
+.appleVision img{
+  height: 240px;
+  width: 150px;
+  margin-top: 80px;
+}
+.appleVisionHeading{
+  margin-top: 60px;
+  margin-left: 30px;
+}
+.appleVisionHeading h1{
+  font-size: 40px;
+  color: #ffffff;
+}
+.appleVisionHeading p{
+  color: rgb(179, 179, 179);
+}
+
+
+.browseCont{
+  height: 400px;
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+ flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+.browseImg2 img{
+  height: 30px;
+  width: 30px;
+  gap: 0;
+  margin-top: 80px;
+}
+.browseImg1 img{
+  height: 30px;
+  width: 30px;
+  gap: 0;
+  margin-top: 80px;
+  display: flex;
+}
+.browseCont h3{
+  margin-top: 70px;
+  font-size: 25px;
+  font-family: sans-serif;
+  margin-left: 300px;
+}
+
+
+.browseProduct{
+  justify-content: center;
+  align-items: center;
+  margin-left: 300px;
+  display: flex;
+  gap: 1cm;
+  margin-bottom: 100px;
+}
+
+.product{
+
+  border-radius: 13px;
+  background-color:rgb(218, 218, 218);
+  height: 150px;
+  width: 190px;
+}
+.product img{
+  margin-top: 20px;
+  height: 70px;
+  margin-left: 50px;
+  overflow: hidden;
+}
+.product h4{
+  font-size: large;
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+.product2{
+
+  border-radius: 13px;
+  background-color:rgb(218, 218, 218);
+  height: 150px;
+  width: 190px;
+}
+.product2 img{
+  margin-top: 20px;
+  height: 70px;
+  margin-left: 60px;
+  overflow: hidden;
+}
+.product2 h4{
+  font-size: large;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+
+
+.product3{
+
+  border-radius: 13px;
+  background-color:rgb(218, 218, 218);
+  height: 150px;
+  width: 190px;
+}
+.product3 img{
+  margin-top: 30px;
+  height: 50px;
+  margin-left: 60px;
+  overflow: hidden;
+}
+.product3 h4{
+  font-size: large;
+  margin-left: 57px;
+  margin-top: 20px;
+}
+
+.product4{
+
+  border-radius: 13px;
+  background-color:rgb(218, 218, 218);
+  height: 150px;
+  width: 190px;
+}
+.product4 img{
+  margin-top: 20px;
+  height: 70px;
+  margin-left: 60px;
+  overflow: hidden;
+}
+.product4 h4{
+  font-size: large;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+
+
+
+.product5{
+
+  border-radius: 13px;
+  background-color:rgb(218, 218, 218);
+  height: 150px;
+  width: 190px;
+}
+.product5 img{
+  margin-top: 20px;
+  height: 70px;
+  margin-left: 60px;
+  overflow: hidden;
+}
+.product5 h4{
+  font-size: large;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.product6{
+
+  border-radius: 13px;
+  background-color:rgb(218, 218, 218);
+  height: 150px;
+  width: 190px;
+}
+.product6 img{
+  margin-top: 10px;
+  height: 90px;
+  margin-left: 50px;
+  overflow: hidden;
+}
+.product6 h4{
+  font-size: large;
+  margin-left: 65px;
+
+}
+
+
+
+.list{
+  height: 1100px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+
+}
+.listHeading {
+  font-size: x-large;
+  font-weight: 500;
+display: flex;
+  width: 50%;
+  gap: 1cm;
+  margin-left: 300px;
+  margin-top: 80px;
+  text-align: justify;
+  color: grey;
+}
+.listHeading h3:nth-child(1){
+  color: black ;
+
+}
+.listProduct{
+  display: flex;
+  margin-top: 30px;
+  margin-left: 300px;
+  gap: 0.5cm;
+
+}
+.listPro{
+  
+  border-radius: 10px;
+  height: 400px;
+  width: 270px;
+ 
+}
+
+.listProduct2{
+  display: flex;
+  margin-top: 20px;
+  margin-left: 300px;
+  gap: 0.5cm;
+
+}
+.listPro{
+  
+  background-color:rgb(235, 235, 235);
+  border-radius: 10px;
+  height: 440px;
+  width: 270px;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: 150;
+  align-items: center;
+}
+ .listPro img:nth-child(2){
+  margin-top: 30px;
+  margin-left: 55px;
+  
+} 
+
+.listPro img:nth-child(1){
+  margin-top: 20px;
+  margin-left: 220px;
+ 
+}
+.listPro h4{
+  margin-top: 15px;
+/* margin-left: 30px ; */
+text-align: center;
+}
+.listPro h1{
+  font-weight: 400;
+  font-size: x-large;
+  margin-left: 100px ;
+  margin-top: 5px;
+}
+.listPro button{
+  background-color: #000000;
+  color:#ffffff;
+  border-radius: 10px;
+  margin-left: 50px;
+  width: 170px;
+  margin-top: 8px;
+}
+
+
+
+.popularPro{
+  background-color: aquamarine;
+  height: 710px;
+  width: 100%;
+  display: flex;
+}
+.popularPro1{
+  height: 710px;
+  width: 25%;
+ background-color: white;
+}
+.popularPro1 h1{
+  font-size: xx-large;
+  margin-left: 60px;
+
+}
+.popularPro1 p{
+  color: rgb(163, 163, 163);
+  margin-left: 60px;
+}
+.popularPro1 button{
+  border: solid black 1px;
+  color: black;
+  margin-left: 60px;
+}
+.popularPro2{
+  height: 710px;
+  width: 25%;
+ background-color: rgb(241, 241, 241);
+}
+
+.popularPro2 h1{
+ margin-top: 80px;
+  font-size: xx-large;
+  margin-left: 60px;
+}
+.popularPro2 p{
+  color: rgb(163, 163, 163);
+  margin-left: 60px;
+}
+.popularPro2 button{
+  border: solid black 1px;
+  color: black;
+  margin-left: 60px;
+}
+.popularPro3{
+  height: 710px;
+  width: 25%;
+  background-color: rgb(209, 209, 209);
+}
+.popularPro3 h1{
+  font-size: xx-large;
+  margin-left: 60px;
+ margin-top: 80px;
+}
+.popularPro3 p{
+  color: rgb(129, 129, 129);
+  margin-left: 60px;
+}
+.popularPro3 button{
+  border: solid black 1px;
+  color: black;
+  margin-left: 60px;
+}
+.popularPro4{
+  height: 710px;
+  width: 25%;
+ 
+  background-color: #171717;
+}
+.popularPro4 h1{
+  font-size: xx-large;
+  margin-left: 60px;
+ margin-top: 60px;
+ color: white;
+}
+.popularPro4 p{
+  color: rgb(129, 129, 129);
+  margin-left: 60px;
+}
+.popularPro4 button{
+  border: solid rgb(255, 255, 255) 1px;
+  color: rgb(255, 255, 255);
+  margin-left: 60px;
+}
+
+
+.discount{
+  height: 700px;
+  width: 100%;
+  background-color: #ffffff;
+  
+  
+  padding: 0;
+  margin: 0;
+}
+.discount h2{
+  margin-top: 90px;
+  margin-left: 350px;
+  
+  height: 40px;
+
+  font-size: xx-large;
+}
+.discountProduct{
+
+  margin-top: 30px;
+  display: flex;
+  gap: 1cm;
+  margin-left: 350px;
+  
+}
+.discountDiv{
+  height: 400px;
+  width: 20%;
+  background-color: #e4e4e4;
+  border-radius: 10px;
+ 
+}
+.discountDiv img:nth-child(1){
+  margin-top: 15px;
+  margin-left: 210px;
+}
+.discountDiv img:nth-child(2){
+  margin-left: 50px;
+}
+.discountDiv button{
+  background-color: #000000;
+  color:#ffffff;
+  border-radius: 10px;
+  margin-left: 40px;
+  width: 170px;
+  margin-top: 8px;
+}
+.discountDiv h4{
+  margin-top: 15px;
+/* margin-left: 30px ; */
+text-align: center;
+}
+.discountDiv h1{
+  font-weight: 400;
+  font-size: x-large;
+  margin-left: 90px ;
+  margin-top: 5px;
+}
+
+
+.summerSale{
+  height: 300px;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+.image-text{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  text-align: center;
+}
+
+.image-text h1{
+  font-size: 90px;
+  color: white;
+}
+.image-text p{
+  font-size: 20px;
+  margin-top: 10px;
+  color: rgb(175, 175, 175);
+}
+.summerSale img{
+  width: 100%;
+}
+
+.footerDiv{
+  height: 650px;
+  width: 100%;
+  background-color: #000000;  margin-top: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.head1{
+  width: 40%;
+  height: 300px;
+ 
+color: white;
+}
+.head1 h1{
+  font-size: 25px;
+margin-top: 120px;
+margin-left: 150px;
+}
+.head1 p{
+  color: rgb(206, 206, 206);
+margin-left: 150px;
+}
+
+.head2{
+  width: 30%;
+}
+.head2 h1{
+  font-size: 25px;
+  color: #ffffff;
+  margin-top: 120px;
+}
+.head2 p {
+  color:rgb(206, 206, 206);
+}
+.footImg{
+  height: 350px;
+  width: 40%;
+
+  display: flex;
+  gap: 1cm;
+}
+.footImg img{
+  height: 20px;
+  width: 20px;
+  
+}
+.footImg img:nth-child(1){
+  margin-left: 150px;
 }
